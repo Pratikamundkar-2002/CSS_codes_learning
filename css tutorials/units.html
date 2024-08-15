@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diff units</title>
+    <style>
+        .container{
+            font-size: 30px;
+        
+        }
+        .box1{
+            /* font-size: 50px; */
+            /* font-size: 2em;   MULTIPLIES THE EM WITH PX 2 INTO 30 */
+            font-size: 2rem;   /* MULTIPLIES REM WITH DEFAULT HTML FONT SIZE 4 INT DEFAULT FONT SIZE*/
+            background-color: blueviolet;
+            width: 500px; 
+            height: 50vh;
+            max-height: 25vh;
+        }
+        .box2{
+            font-size: 2rem;
+            background-color: red;
+            width: 500px;
+            width: 50vw;        /* VH IS USED TO 50% of SCREEN DISPLAY [viewport] HEIGHT*/
+            height: 50vh;       /* VW IS USED TO 50% OF SCREEN DISPLAY [viewport] WIDTH*/
+        }
+    </style>
+</head>
+<body>
+    <div class="continer">
+        money fame has no shame
+    </div>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, nam.</div>
+    <div class="box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, esse magni  
+        nihil quas laborum? Culpa nam alias expedita ullam.</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.red{
+background-color: red;
+color: aliceblue;
+height: 200px;
+}
+.green{
+background-color: green;
+color: aliceblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+ }  

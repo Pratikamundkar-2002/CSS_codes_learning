@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> transition and transform</title>
+    <style>
+        .container{
+           background-color: red;
+           height: 500px;
+          
+
+        }
+        .box{
+
+            border: solid 2px black;
+            transform: translate(700px, 100px) ;
+            transform-origin: 0;
+            display: inline-block;
+            /* transform: scale(2, 2) ; */
+            /* transform: skew(0deg, 30deg); */
+            /* transform: rotate(45deg); */
+            /* transform: rotate('90deg'); */
+
+        }
+        img{
+            width: 450px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-delay: 0.5s;
+            transition-timing-function: ease-in;
+            transform: rotateZ(90deg);
+        }
+        img:hover{
+            width: 70px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><img id="my image" src="https://source.unsplash.com/user/erondu/300x200">
+            <button class="btn">toggle</button></div>
+         
+    </div>
+
+</body>
+<!-- <script>
+    btn.addEventListner("click", ()=>{
+        myimage.style.width = "540"
+    })
+</script> -->
+
+
+</html>
